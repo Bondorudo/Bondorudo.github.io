@@ -14,8 +14,22 @@
         <li><a href="index.html" class="button">Takaisin</a></li>
       </ul>
       <h3>Tower Platformer Game</h3>
-      <p>//Replace image with embedded game</p>
-      <a class="image fit"><img src="images/Factory_Infiltration.png" alt="" /></a>
+      <p>Press 'Escape' or 'E' to pause the game <br>
+      move = wasd | jump = space | dash = lShift</p>
+      <iframe id="embededGame" src="https://i.simmer.io/@Bondorudo/tower-platformer" style="width:1080px;height:600px;border:0"></iframe>
+      <ul class="actions special">
+        <li><button onclick="goFullscreen('embededGame'); return false">Fullscreen</button></li>
+      </ul>
+  <script>
+  function goFullscreen(id) {
+    var element = document.getElementById(id);
+    if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+      element.webkitRequestFullScreen();
+    }
+  }
+  </script>
     </div>
   </body>
 </html>

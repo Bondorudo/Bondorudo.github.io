@@ -14,8 +14,22 @@
         <li><a href="index.html" class="button">Takaisin</a></li>
       </ul>
       <h3>Factory infiltration Game</h3>
-      <p>//Replace image with embedded game</p>
-      <a class="image fit"><img src="images/Factory_Infiltration.png" alt="" /></a>
+      <p>Press 'Escape' to pause the game <br>
+      move up and down with wasd or the arrow keys</p>
+      <iframe id="embededGame" src="https://i.simmer.io/@Bondorudo/factory-infiltration" style="width:960px;height:600px;border:0"></iframe>
+      <ul class="actions special">
+        <li><button onclick="goFullscreen('embededGame'); return false">Fullscreen</button></li>
+      </ul>
+  <script>
+  function goFullscreen(id) {
+    var element = document.getElementById(id);
+    if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+      element.webkitRequestFullScreen();
+    }
+  }
+  </script>
     </div>
   </body>
 </html>
