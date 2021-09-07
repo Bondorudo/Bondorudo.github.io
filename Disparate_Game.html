@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Disparate</title>
+    meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body>
+    <div id="main" class="fade-in">
+      <ul class="actions special">
+        <li><a href="index.html" class="button">Takaisin</a></li>
+      </ul>
+      <h3>Disparate</h3>
+      <p>Left click to shoot your way trough 30 different levels and from different persectives</p>
+      <iframe src="https://i.simmer.io/@Bondorudo/disparate" style="width:960px;height:600px;border:0"></iframe>
+      <ul class="actions special">
+        <li><button onclick="goFullscreen('embededGame'); return false">Fullscreen</button></li>
+      </ul>
+  <script>
+  function goFullscreen(id) {
+    var element = document.getElementById(id);
+    if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+      element.webkitRequestFullScreen();
+    }
+  }
+  </script>
+    </div>
+  </body>
+</html>
