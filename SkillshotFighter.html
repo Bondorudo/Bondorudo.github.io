@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SkillshotFighter</title>
+    meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body>
+    <div id="main" class="fade-in">
+      <ul class="actions special">
+        <li><a href="index.html" class="button">Takaisin</a></li>
+      </ul>
+      <h3>SkillshotFighter</h3>
+      <article>
+        <p>A, D to move, W or Space to Jump. Q, E, R, F, V to activate abilities and Left mouse click to use them.</p>
+        <video width="960" height="540" controls>
+          <source src="videos/SkillshotFighterDemo.mp4" type="video/mp4">
+        </video>
+      </article>
+      <article>
+        <p>Abilities are almost fully customizable from the inspector.*</p>
+        <video width="960" height="540" controls>
+          <source src="videos/SkillshotFighterAbilities.mp4" type="video/mp4">
+        </video>
+        <p>More about Times To Reflect: if "can bounce" is clicked times to relfect is how many times a projectile can hit a surface and bounce back</p>
+        <p>More about Projectile types: <br>
+            -Fireball: Just moves forward <br>
+            -Boomerang: Moves forward and then comes back <br>
+            -Arched: Not yet implemented, but supposed to look something like this:</p>
+            <video width="480" height="270" controls autoplay="true">
+              <source src="videos/DianaQ.webm" type="video/mp4">
+            </video>
+            <br>
+            -Syndra Ball: Appears where mouse was when clicked, has a range if click happens out of range then appear at range in mouse direction. <br>
+            <video width="480" height="270" controls autoplay="true">
+              <source src="videos/SyndraQ.webm" type="video/mp4">
+            </video>
+      </article>
+
+
+  <script>
+  function goFullscreen(id) {
+    var element = document.getElementById(id);
+    if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+      element.webkitRequestFullScreen();
+    }
+  }
+  </script>
+    </div>
+  </body>
+</html>
